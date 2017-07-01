@@ -23,3 +23,10 @@ A master contém apenas o material finalizado, para ter acesso ao material #emPr
 ..* 0.0.1 - Programação em Ação #rascunho
 ..* 0.0.1 - Fundamentos de Design #rascunho
 ..* 0.0.1 - Matéria Ainda Sem Nome #rascunho
+
+1. First ordered list item
+2. Another item
+⋅⋅* Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+⋅⋅1. Ordered sub-list
+4. And another item.
