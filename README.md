@@ -19,7 +19,7 @@ Veja nossas milestones.
 ## Lista do material disponivel
 A master contém apenas o material finalizado, para ter acesso ao material #emProdução verifique as branchs do repositório
 - Primeiro Ciclo
- - 0.0.1 - Fundamentos de Programação #rascunho
- - 0.0.1 - Programação em Ação #rascunho
- - 0.0.1 - Fundamentos de Design #rascunho
- - 0.0.1 - Matéria Ainda Sem Nome #rascunho
+..- 0.0.1 - Fundamentos de Programação #rascunho
+..- 0.0.1 - Programação em Ação #rascunho
+..- 0.0.1 - Fundamentos de Design #rascunho
+..- 0.0.1 - Matéria Ainda Sem Nome #rascunho
