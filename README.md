@@ -1,5 +1,5 @@
-# MaterialDidatico
-Repositório com todos os materiais do projeto, disponivel, para consulta, consumo e aberto a colaboração de todos.
+# Material Didático
+Repositório com todos os matériais do projeto, disponivel, para consulta, consumo e aberto a colaboração de todos.
 
 ## Semear Talentos
 ### Missão
