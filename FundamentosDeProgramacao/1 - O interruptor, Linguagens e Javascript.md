@@ -1,5 +1,5 @@
 # Fundamentos de Programação
-## Encontro 1: O interruptor, a NASA e o computador
+## Encontro 1: O interruptor, linguagens e Javascript
 O nosso projeto se propõe a trasnformar qualquer um interessado em um desenvolvedor de aplicativos, websites e outros serviços web. Hoje as possibilidades são inumeras, e as necessidades por bons profissionais maiores ainda.
 
 Tudo começa nessa matéria. Aqui vamos desmitificar as habilidades dos seres incompreendidos que chamamos de programadores. Vamos entender que você executa um programa toda vez que acende a lâmpada do seu quarto. 
@@ -131,19 +131,46 @@ Logo, linguagens tem intençoes, são criadas a partir de outras, normalmente ou
 
 Por exemplo o javascript que usamos, ele foi criado para trazer interaçoes e dinamismo as paginas de web. Então aquela linha document.getelement é uma das bases na qual ele foi criado.
 
-Linguagens evoluem, as vezes mudam seu foco. Como ocorre hoje com javascript. Tem aplicacoes inteiras que nem mesmo reconhecem mais essa linha document, ou DOM, por que esta sendo usado fora do navegador.
+Linguagens evoluem, as vezes mudam seu foco. Como ocorre hoje também com o javascript. Tem aplicacoes inteiras em javascript que nem mesmo reconhecem mais essa linha document, ou DOM, por que esta sendo usado fora do navegador.
 
-E ainda usando o javascript, ele foi construido com base na Linguagem C, junto com C#, C++, JAVA. Entao teremos muitas coisas semelhantes entre si. Mas cuidado, podem ser semelhantes, mas nao sao iguais.
+Do mesmo modo que o javascript, construido com base na Linguagem C, temos o C#, C++, JAVA. Mas cada uma com a sua propria proposta e intenção.
 
 Exemplos dessas linguagens, resolvendo o caso da lampada.
+```C
 
+```
+```C++
+
+```
+```C#
+
+```
+```JAVA
+
+```
+
+```Objective-C
+
+```
+
+```Swifty
+
+```
+
+```lua
+
+```
 #### Sintax
+syntax is the set of rules.
+Regras que o programador e o computador concordam.
 
 ### Classificação de linguagem
 
  - Por níveis
  - Por Tipagem
  - Por runtime
+
+
 
  ### Tipos de dados
  Versao composta.
