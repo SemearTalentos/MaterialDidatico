@@ -197,6 +197,7 @@ Para finalizar vamos complicar nossa situação da lampada.
 No problema que resolvemos o estado do interruptor era enviado para o resultado final. Mas e se eu quiser adicionar 2 interruptores no meu quarto? Essa solução nao me parece muito boa. Vamos pensar construir nossa logica 
 
 interruptor `a` e interruptor `b`
+
  | a | b | r |
  |---|---|---|
  |0|0|0|
@@ -208,12 +209,13 @@ interruptor `a` e interruptor `b`
 
  `s` para sinal.
  `l` para lampada.
- | s | l | r |
- |---|---|---|
- |0|0|0|
- |1|0|1|
- |0|1|1|
- |1|1|0|
+
+  | s | l | r |
+  |---|---|---|
+  |0|0|0|
+  |1|0|1|
+  |0|1|1|
+  |1|1|0|
 
  Esse tipo de arquiterura, nos permite nao colocar apenas mais 1 interruptor, mas sim, qualquer numero de interruptores. Não nos importamos em quem envia o sinal. Mas se ele chega ou não.
 
