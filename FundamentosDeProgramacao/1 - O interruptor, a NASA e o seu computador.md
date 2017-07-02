@@ -17,14 +17,14 @@ Consideremos a situação.
 A - Se o interruptor está `desligado` a lampada esta `desligada`
 B - Se o interruptor está `ligado` a lampada esta `ligada`
 
- |   | Interruptor | Lâmpada   |
+ |   | Interruptor | Lâmpada/resultado   |
  |---|-------------|-----------|
  | A | desligado   | desligada |
  | B | ligado      | ligado    |
 
 Vamos começar a usar uma linguagem mais simples, descobriremos que tudo em programação é sobre simplificar. Entao o ligado será escrito como `1`, e o desligado como `0` 
 
- |   | Interruptor | Lâmpada   |
+ |   | Interruptor | Lâmpada/resultado   |
  |---|-------------|-----------|
  | A | 0           | 0         |
  | B | 1           | 1         |
@@ -35,12 +35,96 @@ Mas vamos aprender a simplificar ainda mais esse nosso diagrama?
 
 Vamos dar letras para os nossos elementos:
 
- |   | i           | l         |
+ |   | i           | r         |
  |---|-------------|-----------|
  | A | 0           | 0         |
  | B | 1           | 1         |
  
- Acostumar com 0 e 1 é algo importante para nós, escrever ele é algo bem comum. Mas especialmente nas nossas aulas eles estarão sempre presente.
+ #### Ação
+ Vamos escrever essa instrução em javascript? Acompanhe as proximas linhas copiando-as para o console do seu navegador.(instruçoes para acessar o console)
+
+ ##### Como usar o console
+ ###### Acessando
+
+ ###### Operações
+ - matemática
+ - o = e o 'enter'
+ - retorno
+ Sobre o sinal `=`. Repare que não estamos perguntando se a lampada é igual a `0`, estamos inserindo o numero `0` na variavel lampada e interruptor. Até inserirmos qualquer coisa numa variavel, ela esta vazia, depende da linguagem para afirmarmos qual é o estado exato dessa variavel sem valor. Em javascript temos 2 tipos de estados vazios, `null` e `undefined`.
+
+```javascript
+function acionarInterruptor(a) { 
+    // o que entra no argumento, é o que sai. Essa é a função mais simples.
+    return a
+}
+```
+Vamos deixar isso mais interesante?
+O que acabamos de fazer é a parte mais importante dessa função, mas podemos incrementar.
+
+```javascript
+function acionarInterruptor(a) { 
+    // o que entra no argumento, é o que sai. Essa é a função mais simples.
+    var r
+    if(a == 0) {
+        r = 'lampada apagada'
+    } else {
+        r = 'lampada acessa'
+
+    }
+    // assim como no quarto transformamos o inpulso fisico em luminoso, aqui estamos transformando o numerico em texto. Parabens, este é o seu primeiro processamento de dados.
+    return r
+}
+```
+
+```javascript
+function mudarBackground(valor) {
+    document.querySelector('body').style.background = 'rgb(' + valor + ')'
+    return valor
+}
+
+function acionarInterruptor(a) { 
+    // o que entra no argumento, é o que sai. Essa é a função mais simples.
+    var r
+    if(a == 0) {
+        r = 'lampada apagada'
+        mudarBackground('0,0,0')
+    } else {
+        r = 'lampada acessa'
+        mudarBackground('255,255,255')
+    }
+    // assim como no quarto transformamos o inpulso fisico em luminoso, aqui estamos transformando o numerico em texto. Parabens, este é o seu primeiro processamento de dados.
+    return r
+}
+```
+
+```javascript
+function mudarBackground(valor) {
+    document.querySelector('body').style.background = 'rgb(' + valor + ')'
+    return valor
+}
+
+function acionarInterruptor(a) { 
+    // o que entra no argumento, é o que sai. Essa é a função mais simples.
+    var r
+    if(!a) {
+        r = 'lampada apagada'
+        mudarBackground('0,0,0')
+    } else {
+        r = 'lampada acessa'
+        mudarBackground(a)
+    }
+    // assim como no quarto transformamos o inpulso fisico em luminoso, aqui estamos transformando o numerico em texto. Parabens, este é o seu primeiro processamento de dados.
+    return r
+}
+```
+Programação é sempre por partes.
+Primeiro, descobrimos qual a logica, com aquele truque da tabela com entrada e resultado.
+
+Despois, vamos adicionando os penduricalhos, no nosso caso, primeiro exibimos uma frase simples no console. depois mudamos a cor do fundo.
+
+Pausa
+
+
  Versao composta.
 
 O que é uma linguagem?
