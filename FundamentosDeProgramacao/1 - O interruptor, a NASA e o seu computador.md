@@ -16,6 +16,7 @@ Mas vamos esquecer esses conceitos. Vamos nos concentrar agora apenas na lâmpad
 Consideremos a situação. 
 A - Se o interruptor está `desligado` a lampada esta `desligada`
 B - Se o interruptor está `ligado` a lampada esta `ligada`
+
  |   | Interruptor | Lâmpada   |
  |---|-------------|-----------|
  | A | desligado   | desligada |
@@ -33,6 +34,7 @@ Isso aqui é também um set de instruções que pode ser executado pelo computad
 Mas vamos aprender a simplificar ainda mais esse nosso diagrama?
 
 Vamos dar letras para os nossos elementos:
+
  |   | i           | l         |
  |---|-------------|-----------|
  | A | 0           | 0         |
