@@ -137,27 +137,34 @@ Do mesmo modo que o javascript, construido com base na Linguagem C, temos o C#, 
 
 Exemplos dessas linguagens, resolvendo o caso da lampada.
 ```C
-
+C
 ```
 ```C++
-
+C++
 ```
 ```C#
-
+C#
 ```
 ```JAVA
-
+JAVA
 ```
 
 ```Objective-C
-
+Objective-C
 ```
 
 ```Swifty
-
+Swifty
 ```
 
 ```lua
+lua
+```
+```python
+Python
+````
+```ruby
+Ruby
 
 ```
 #### Sintax
@@ -170,9 +177,8 @@ Regras que o programador e o computador concordam.
  - Por Tipagem
  - Por runtime
 
-
-
  ### Tipos de dados
+
  Versao composta.
 
 O modo como enviamos os comandos para a maquina, no nosso caso temos muito mais botões a disposição do que os dois do caso da lâmpada. No nosso caso escolhemos uma outra série de verbos, e guardem isso verbos. Para interagir com o computador.
