@@ -8,6 +8,8 @@ Também perceberemos o por que chamamos o computador de computador, afinal de co
 
 Calma, não fuja. Tudo a seu tempo, nesse momento, tente responder para si mesmo, o que é um programa de computador?
     - COLOQUE AQUI SUA RESPOSTA
+
+
 ### O que é programar?
 Se você chegou a uma resposta que se assemelha a a alguma dessas, você já começou bem.
 
@@ -171,41 +173,78 @@ Ruby
 syntax is the set of rules.
 Regras que o programador e o computador concordam.
 
-### Classificação de linguagem
+### Classificação de linguagens
 
  - Por níveis
+   - Alto nível
+   - Baixo nível
  - Por Tipagem
+   - tipagem fraca
+   - tipagem forte
  - Por runtime
+   - Compilada
+   - Interpretada
 
- ### Tipos de dados
+A lógica é compartilhda por todas, e nesse curso, vamos focar especificamente na logica. E em como resolver problemas com ela.
 
- Versao composta.
+Vamos também aprender como encarar uma linguagem nova e descobrir onde estao os recursos dela.
 
-O modo como enviamos os comandos para a maquina, no nosso caso temos muito mais botões a disposição do que os dois do caso da lâmpada. No nosso caso escolhemos uma outra série de verbos, e guardem isso verbos. Para interagir com o computador.
+Nossos exercicios aqui vão ser todos feitos com base no javascript. Mas sempre trarei exemplo do recuso nas outras linguagens.
 
-Sobre verbos e Comandos elétricos. Com reles. Um pequeno exemplo.
+### Bora mais uma vez?
+Para finalizar vamos complicar nossa situação da lampada.
 
-Por de trás. O computador entende apenas o que a lâmpada entende, mas ele é uma combinação complexa e intrínseca de semicondutores, que são uma espécie de reles com muito mais comportamentos disponíveis que os simples normalmente fechados e normalmente aberto.
+No problema que resolvemos o estado do interruptor era enviado para o resultado final. Mas e se eu quiser adicionar 2 interruptores no meu quarto? Essa solução nao me parece muito boa. Vamos pensar construir nossa logica 
 
-Maaas, a verdade é que tudo isso é apenas para ser sabido, ta la no fundo, e ficar simples de compreender o que vamos fazer.
-Como programar?
-Vamos entender nossos verbos, esses são comuns a maioria das linguagens.
-- Variaveis, Loops, assign, retorno, funções.
+interruptor `a` e interruptor `b`
+ | a | b | r |
+ |---|---|---|
+ |0|0|0|
+ |1|0|1|
+ |0|1|1|
+ |1|1|1|
 
-Por que inglês?
-Basicamente pq é onde foi feita a linguagem, como o comando se chama no fim pouco importa, mas o proncipal é seu comportamento.
+ O que eu quero dizer aqui, que se `a` ou `b` forem verdadeiros eu quero que minha lampada se acenda. Mas esse ainda não é o comportamento ideal. Para apagar essa lampada meus dois interruptores precisam estar desligados. Vamos mudar o foco, pensemos como se os interruptores fossem capinhas, eles mandam apenas um sinal. Não mandam o estado. Esse estado fica dentro da lampada, ela precisa saber se esta ou nao ligada. E ela precisa reagir de acordo.
 
-Vamos identificar os verbos no Javascript.
-Var
-Function
-=
-(parametros)
-números
-strings
-arrays
-objetos
-Tudo isso vai ficar mais claro quando aplicarmos. Escolhemos o javascript pq é a mais fácil de se começar e nossa aula de mercado usará esse conhecimento.
+ `s` para sinal.
+ `l` para lampada.
+ | s | l | r |
+ |---|---|---|
+ |0|0|0|
+ |1|0|1|
+ |0|1|1|
+ |1|1|0|
 
-Escrevendo o caso da lâmpada com javascript.
-Escrevendo o caso do rele com javascript.
+ Esse tipo de arquiterura, nos permite nao colocar apenas mais 1 interruptor, mas sim, qualquer numero de interruptores. Não nos importamos em quem envia o sinal. Mas se ele chega ou não.
 
+ ```javascript
+var lampada = false
+var corGlobal
+
+function mudarBackground(valor) {
+    document.querySelector('body').style.background = 'rgb(' + valor + ')'
+    return valor
+}
+
+function escolherCor() {
+    var cor
+    if (!lampada) {
+        cor = '0,0,0'
+    } else if(corGlobal) {
+        cor = corGlobal
+    } else {
+        cor = '255,255,255'
+    }
+    mudarBackground(cor)
+    return cor
+}
+
+function acionarInterruptor() { 
+    // Nesse caso nao precisamos de um argumento
+    lampada = !lampada // `!` nega a realidade do valor, se era verdadeiro vira falso
+   return escolherCor()
+}
+
+ ```
+
+ Vamos descobrir que esse tipo de coisa é o mais comum no javascript. Por ele ser uma linguagem voltada para eventos.
