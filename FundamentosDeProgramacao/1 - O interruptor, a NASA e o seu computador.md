@@ -13,29 +13,30 @@ Se você chegou a uma resposta que se assemelha a a alguma dessas, você já com
 
 Mas vamos esquecer esses conceitos. Vamos nos concentrar agora apenas na lâmpada do seu quarto e o interruptor que liga e desliga a luz.
 
-Consideremos a situação, se acionamos o interruptor e a lampada acendeu, era por que ela estava apagada, se ela apagou é por que ela estava acessa.
-
- | Interruptor | Lâmpada   |
- |-------------|-----------|
- | desligado   | desligada |
- | ligado      | ligado    |
+Consideremos a situação. 
+A - Se o interruptor está `desligado` a lampada esta `desligada`
+B - Se o interruptor está `ligado` a lampada esta `ligada`
+ |   | Interruptor | Lâmpada   |
+ |---|-------------|-----------|
+ | A | desligado   | desligada |
+ | B | ligado      | ligado    |
 
 Vamos começar a usar uma linguagem mais simples, descobriremos que tudo em programação é sobre simplificar. Entao o ligado será escrito como `1`, e o desligado como `0` 
 
- | Interruptor | Lâmpada   |
- |-------------|-----------|
- | 0           | 0         |
- | 1           | 1         |
+ |   | Interruptor | Lâmpada   |
+ |---|-------------|-----------|
+ | A | 0           | 0         |
+ | B | 1           | 1         |
 
 Isso aqui é também um set de instruções que pode ser executado pelo computador. Na verdade, esse é o programa mais simples que qualquer computador pode executar. Ele recebe um dado e devolve esse dado. No nosso caso, esse dado entra como um estimulo fisico, apertar o interruptor, e sai em forma de luz. Logo o dado é processado. Claro que quando falamos em processamento, não é algo tao simples como isso.
 
 Mas vamos aprender a simplificar ainda mais esse nosso diagrama?
 
 Vamos dar letras para os nossos elementos:
- | i           | l         |
- |-------------|-----------|
- | 0           | 0         |
- | 1           | 1         |
+ |   | i           | l         |
+ |---|-------------|-----------|
+ | A | 0           | 0         |
+ | B | 1           | 1         |
  
  Acostumar com 0 e 1 é algo importante para nós, escrever ele é algo bem comum. Mas especialmente nas nossas aulas eles estarão sempre presente.
  Versao composta.
