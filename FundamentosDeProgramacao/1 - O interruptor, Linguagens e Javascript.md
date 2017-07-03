@@ -9,7 +9,6 @@ Também perceberemos o por que chamamos o computador de computador, afinal de co
 Calma, não fuja. Tudo a seu tempo, nesse momento, tente responder para si mesmo, o que é um programa de computador?
     - COLOQUE AQUI SUA RESPOSTA
 
-
 ### O que é programar?
 Se você chegou a uma resposta que se assemelha a a alguma dessas, você já começou bem.
 
@@ -42,6 +41,10 @@ Vamos dar letras para os nossos elementos:
  | A | 0           | 0         |
  | B | 1           | 1         |
  
+#### Lógica
+Preciso adicionar a parte sobre logica?
+
+
  #### Ação
  Vamos escrever essa instrução em javascript? Acompanhe as proximas linhas copiando-as para o console do seu navegador.(instruçoes para acessar o console)
 
